@@ -12,6 +12,8 @@ body {
   height: 50vh;
   margin: 0;
 
+  overflow: hidden;
+
   transition: var(--transition-delay);
 
   background-color: var(--background-color);
@@ -25,7 +27,7 @@ body.dark {
 }
 
 .title {
-  margin-top: 10rem;
+  margin-top: 90px;
 }
 
 .theme-toggle-button {
@@ -100,4 +102,26 @@ body.dark {
 p {
   font-size: 1.5em;
   padding: 50px 50px 0px 50px;
+}
+
+@media (max-width: 720px) {
+  .title {
+    position: absolute;
+    top: 100px;
+  }
+
+  h3 {
+    position: absolute;
+    top: 50px;
+  }
+
+  .theme-toggle-button {
+    position: absolute;
+    top: 120px;
+  }
+
+  .container {
+    position: absolute;
+    top: 250px;
+  }
 }
